@@ -9,3 +9,6 @@ div.innerHTML = newProject
 projectList.appendChild(div.firstChild)
 projectPopover.classList.add('is-hidden')
 projectNameInput.value = ''
+
+document.getElementById("invalid-feedback").outerHTML=''
+projectNameInput.classList.remove('is-invalid')
