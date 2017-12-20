@@ -1,8 +1,8 @@
 class ProjectController < ApplicationController
   
   def index
-    @project = Project.new
     @projects = Project.all
+    @project = Project.new
   end
   
   def create
@@ -15,6 +15,10 @@ class ProjectController < ApplicationController
         format.json { render json: @project.errors.messages, status: :unprocessable_entity }
       end
     end
+  end
+  
+  def show
+    @project = Project.find(params[:id])
   end
   
   private
