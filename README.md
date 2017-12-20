@@ -1,0 +1,1 @@
+Learnign Rails through emulating Basecamp functionality.
